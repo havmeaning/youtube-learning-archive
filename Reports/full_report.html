@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube History Research — Full Report</title>
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --panel: #141414;
+    --border: #2a2a2a;
+    --gold: #d4a843;
+    --blue: #5b9bd5;
+    --text: #e0e0e0;
+    --subtext: #888;
+    --code-bg: #1a1a1a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Courier New', monospace; line-height: 1.7; }
+  #nav { background: var(--panel); border-bottom: 1px solid var(--border); padding: 12px 40px; position: sticky; top: 0; z-index: 10; font-size: 13px; }
+  #nav a { color: var(--gold); text-decoration: none; margin-right: 8px; }
+  #nav a:hover { text-decoration: underline; }
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+  section { border-bottom: 1px solid var(--border); padding-bottom: 40px; margin-bottom: 40px; }
+  h1 { color: var(--gold); font-size: 1.8em; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin: 24px 0 16px; }
+  h2 { color: var(--blue); font-size: 1.3em; margin: 28px 0 12px; }
+  h3 { color: var(--text); font-size: 1.1em; margin: 20px 0 8px; }
+  p { margin: 8px 0; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th { background: var(--panel); color: var(--gold); border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+  td { border: 1px solid var(--border); padding: 7px 12px; }
+  tr:nth-child(even) td { background: #111; }
+  code { background: var(--code-bg); padding: 2px 6px; border-radius: 3px; font-size: 12px; color: var(--gold); }
+  pre { background: var(--code-bg); padding: 16px; border-radius: 4px; overflow-x: auto; margin: 12px 0; border-left: 3px solid var(--gold); }
+  pre code { padding: 0; background: none; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+  strong { color: var(--gold); }
+  br { display: block; margin: 4px 0; }
+  footer { text-align: center; color: var(--subtext); font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+<div id="nav"><a href="#executive-summary">Executive Summary</a> | <a href="#technical-report">Technical Report</a> | <a href="#personal-learning-profile">Personal Learning Profile</a> | <a href="#research-findings">Research Findings</a> | <a href="#future-questions">Future Questions</a></div>
+<main>
+<section id="executive-summary"><h1>Executive Summary</h1>
+<p><strong>YouTube History Research Project</strong>  </p>
+<p>Generated: 2026-06-28</p>
+<br>
+<hr>
+<br>
+<h2>Overview</h2>
+<br>
+<p>This project analyzes a personal YouTube playlist archive spanning approximately 9.5 years (October 2016 – April 2026). The archive consists of 3,536 playlist entries across 98 named playlists, referencing 2,847 unique video IDs.</p>
+<br>
+<p>The framing thesis: <strong>this archive is not entertainment history. It is a behavioral record of self-directed learning across craft, language, body discipline, systems thinking, and mindset construction.</strong></p>
+<br>
+<hr>
+<br>
+<h2>Dataset</h2>
+<br>
+<table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Total playlist entries</td><td>3,536</td></tr>
+<tr><td>Active / retrievable</td><td>3,101 (87.7%)</td></tr>
+<tr><th>Deleted / private</th><th>435 (12.3%)</th></tr>
+<tr><td>Named playlists</td><td>98</td></tr>
+<tr><td>Archive span</td><td>Oct 2016 – Apr 2026</td></tr>
+<tr><th>Peak activity year</th><th>2024 (743 videos)</th></tr>
+<tr><td>Avg video duration</td><td>19.7 minutes</td></tr>
+<tr><td>Est. total saved content</td><td>1,018 hours</td></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Dominant Signals</h2>
+<br>
+<p>- <strong>Top channel:</strong> etthehiphoppreacher — 147 videos saved, present across multiple life phases</p>
+<p>- <strong>Top theme:</strong> Brazilian Jiu-Jitsu — 1112 videos (35.9% of active archive)</p>
+<p>- <strong>Long-form content:</strong> 13.1% of videos are 30+ minutes</p>
+<p>- <strong>Peak year:</strong> 2024 (743 saves) — highest single-year volume in the archive</p>
+<br>
+<hr>
+<br>
+<h2>Theme Distribution</h2>
+<br>
+<table>
+<tr><th>Theme</th><th>Videos</th><th>% of Active</th></tr>
+<tr><td>Brazilian Jiu-Jitsu</td><td>1112</td><td>35.86%</td></tr>
+<tr><td>Discipline / Mindset</td><td>474</td><td>15.29%</td></tr>
+<tr><th>Other</th><th>280</th><th>9.03%</th></tr>
+<tr><td>Music</td><td>265</td><td>8.55%</td></tr>
+<tr><td>Politics / News</td><td>155</td><td>5.0%</td></tr>
+<tr><th>Philosophy / Masculinity</th><th>130</th><th>4.19%</th></tr>
+<tr><td>Health / Fitness</td><td>102</td><td>3.29%</td></tr>
+<tr><td>Barber / Craft</td><td>101</td><td>3.26%</td></tr>
+<tr><th>Finance / Wealth</th><th>81</th><th>2.61%</th></tr>
+<tr><td>Business / Marketing</td><td>79</td><td>2.55%</td></tr>
+<tr><td>Spiritual / Faith</td><td>73</td><td>2.35%</td></tr>
+<tr><th>Tech / AI / Systems</th><th>69</th><th>2.23%</th></tr>
+<tr><td>German Language</td><td>51</td><td>1.64%</td></tr>
+<tr><td>Comedy / Entertainment</td><td>39</td><td>1.26%</td></tr>
+<tr><th>Leadership / Military</th><th>38</th><th>1.23%</th></tr>
+<tr><td>Podcasts</td><td>31</td><td>1.0%</td></tr>
+<tr><td>History / Documentary</td><td>21</td><td>0.68%</td></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Life Phase Summary</h2>
+<br>
+<table>
+<tr><th>Phase</th><th>Videos</th><th>Top 3 Themes</th></tr>
+<tr><td>Foundation (2016–2017)</td><td>193</td><td>Discipline / Mindset:37; Philosophy / Masculinity:36; Health / Fitness:24</td></tr>
+<tr><td>Expansion (2018–2019)</td><td>468</td><td>Music:134; Discipline / Mindset:64; Barber / Craft:60</td></tr>
+<tr><th>Deep Study (2020–2021)</th><th>554</th><th>Discipline / Mindset:106; Music:76; Politics / News:73</th></tr>
+<tr><td>Consolidation (2022)</td><td>315</td><td>Discipline / Mindset:102; Brazilian Jiu-Jitsu:71; Other:23</td></tr>
+<tr><td>Transition (2023)</td><td>477</td><td>Brazilian Jiu-Jitsu:319; Other:32; Discipline / Mindset:26</td></tr>
+<tr><th>Operator/AI (2024–2026)</th><th>1094</th><th>Brazilian Jiu-Jitsu:655; Discipline / Mindset:139; Other:113</th></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Top 20 Channels</h2>
+<br>
+<table>
+<tr><th>#</th><th>Channel</th><th>Count</th><th>Theme</th><th>Years</th></tr>
+<tr><td>1</td><td>etthehiphoppreacher</td><td>147</td><td>Discipline / Mindset</td><td>2017–2026</td></tr>
+<tr><td>2</td><td>BIG OSS Jiu-Jitsu Channel</td><td>76</td><td>Brazilian Jiu-Jitsu</td><td>2023–2025</td></tr>
+<tr><th>3</th><th>Bernardo Faria BJJ Fanatics</th><th>53</th><th>Brazilian Jiu-Jitsu</th><th>2020–2025</th></tr>
+<tr><td>4</td><td>ROYDEAN</td><td>49</td><td>Brazilian Jiu-Jitsu</td><td>2023–2024</td></tr>
+<tr><td>5</td><td>Knight Jiu-Jitsu</td><td>48</td><td>Brazilian Jiu-Jitsu</td><td>2020–2025</td></tr>
+<tr><th>6</th><th>JonThomasBJJ</th><th>44</th><th>Brazilian Jiu-Jitsu</th><th>2023–2025</th></tr>
+<tr><td>7</td><td>The Art of Skill</td><td>39</td><td>Brazilian Jiu-Jitsu</td><td>2023–2025</td></tr>
+<tr><td>8</td><td>Jordan Teaches Jiujitsu</td><td>38</td><td>Brazilian Jiu-Jitsu</td><td>2022–2026</td></tr>
+<tr><th>9</th><th>BJJ Globetrotters in Action</th><th>38</th><th>Brazilian Jiu-Jitsu</th><th>2023–2025</th></tr>
+<tr><td>10</td><td>The Grappling Academy</td><td>31</td><td>Brazilian Jiu-Jitsu</td><td>2022–2024</td></tr>
+<tr><td>11</td><td>Jocko Podcast</td><td>30</td><td>Leadership / Military</td><td>2020–2025</td></tr>
+<tr><th>12</th><th>CVBJJ Online</th><th>29</th><th>Brazilian Jiu-Jitsu</th><th>2023–2024</th></tr>
+<tr><td>13</td><td>Chewjitsu</td><td>24</td><td>Brazilian Jiu-Jitsu</td><td>2020–2025</td></tr>
+<tr><td>14</td><td>Paul Elam</td><td>22</td><td>Philosophy / Masculinity</td><td>2017–2020</td></tr>
+<tr><th>15</th><th>ATHLEAN-X™</th><th>22</th><th>Health / Fitness</th><th>2017–2021</th></tr>
+<tr><td>16</td><td>Dubious Dom</td><td>21</td><td>Brazilian Jiu-Jitsu</td><td>2024–2025</td></tr>
+<tr><td>17</td><td>JonThomasBJJ Plus</td><td>20</td><td>Brazilian Jiu-Jitsu</td><td>2023–2024</td></tr>
+<tr><th>18</th><th>Video Advice</th><th>19</th><th>Discipline / Mindset</th><th>2017–2024</th></tr>
+<tr><td>19</td><td>Valuetainment</td><td>19</td><td>Business / Marketing</td><td>2017–2025</td></tr>
+<tr><td>20</td><td>Redacted</td><td>17</td><td>Politics / News</td><td>2023–2025</td></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Key Findings</h2>
+<br>
+<p>1. <strong>BJJ/Grappling dominates the archive</strong> at 1112 videos (35.9%). The archive contains 12+ sub-playlists covering distinct technical areas — this is systematic technical study, not passive viewing.</p>
+<br>
+<p>2. <strong>Discipline/Mindset content is structurally persistent</strong> across all 6 life phases. This is not a motivational phase — it is load-bearing infrastructure that never leaves.</p>
+<br>
+<p>3. <strong>Activity peaked in 2024</strong> with 743 additions — the single highest year. The most intensive archiving period is the most recent one.</p>
+<br>
+<p>4. <strong>Long-form preference is strong</strong> (13.1% of content is 30+ minutes). The average video saved is 19.7 minutes. This is not a clip-watching pattern.</p>
+<br>
+<p>5. <strong>435 videos are permanently lost</strong> (13.5% deletion rate). A meaningful portion of the learning record is unrecoverable.</p>
+<br></section><section id="technical-report"><h1>Technical Report</h1>
+<p><strong>YouTube History Research Project</strong>  </p>
+<p>Generated: 2026-06-28</p>
+<br>
+<hr>
+<br>
+<h2>Data Sources</h2>
+<br>
+<table>
+<tr><th>File</th><th>Rows</th><th>Description</th></tr>
+<tr><td>master_table_hydrated.csv</td><td>3,536</td><td>One row per playlist-video pair. Includes API metadata.</td></tr>
+<tr><td>hydrated_videos.csv</td><td>2,847</td><td>One row per unique video ID with full metadata.</td></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Pipeline</h2>
+<br>
+<pre><code>
+Raw/master_table_hydrated.csv
+    → 01_data_inspection.py       → Documentation/data_dictionary.md
+                                  → Analysis/data_quality_report.csv
+    → 02_clean_and_engineer_features.py → Clean/youtube_history_clean.csv
+    → 03_classify_themes.py       → Clean/youtube_history_themed.csv
+                                  → Analysis/theme_summary.csv
+                                  → Analysis/channel_theme_summary.csv
+                                  → Documentation/theme_classification_rules.md
+    → 04_generate_statistics.py   → Analysis/*.csv (10 files)
+    → 05_create_visualizations.py → Charts/*.png (11 files)
+    → 06_generate_reports.py      → Reports/*.md (5 files) + Reports/full_report.html
+</code></pre>
+<br>
+<hr>
+<br>
+<h2>Feature Engineering</h2>
+<br>
+<table>
+<tr><th>Feature</th><th>Type</th><th>Logic</th></tr>
+<tr><td>added_year</td><td>integer</td><td>Year from Added Timestamp</td></tr>
+<tr><td>added_month</td><td>integer</td><td>Month (1–12)</td></tr>
+<tr><th>added_month_str</th><th>string</th><th>YYYY-MM</th></tr>
+<tr><td>added_quarter</td><td>string</td><td>YYYY-Q1 through Q4</td></tr>
+<tr><td>added_weekday</td><td>string</td><td>Monday–Sunday</td></tr>
+<tr><th>added_hour</th><th>integer</th><th>UTC hour</th></tr>
+<tr><td>pub_year / pub_month</td><td>integer</td><td>From Published At</td></tr>
+<tr><td>video_age_days</td><td>integer</td><td>Added Timestamp − Published At</td></tr>
+<tr><th>age_bucket</th><th>string</th><th>< 1 week / < 1 month / 1–12 months / 1–3 years / > 3 years</th></tr>
+<tr><td>duration_s</td><td>integer</td><td>Parsed from ISO 8601 Duration field</td></tr>
+<tr><td>duration_bucket</td><td>string</td><td>Under 1 min / 1–5 / 5–15 / 15–30 / 30–60 / Over 60</td></tr>
+<tr><th>format_type</th><th>string</th><th>Long-Form (30+ min) / Medium / Short-Form (<10 min)</th></tr>
+<tr><td>view_count_int</td><td>integer</td><td>View Count as integer</td></tr>
+<tr><td>view_bucket</td><td>string</td><td>Niche / Small / Mid / Large / Viral</td></tr>
+<tr><th>title_word_count</th><th>integer</th><th>Word count of Title</th></tr>
+<tr><td>tag_count</td><td>integer</td><td>Number of pipe-separated tags</td></tr>
+<tr><td>is_available</td><td>0/1</td><td>1 if Status == "found"</td></tr>
+<tr><th>content_type</th><th>string</th><th>Inferred: Podcast / Educational / Short Clip / Music / etc.</th></tr>
+<tr><td>life_phase_clean</td><td>string</td><td>6 phases derived from Added Timestamp range</td></tr>
+<tr><td>theme</td><td>string</td><td>Custom rule-based classifier (15 themes)</td></tr>
+<tr><th>theme_score</th><th>integer</th><th>Classifier confidence score</th></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Theme Classifier</h2>
+<br>
+<p>- Rule-based (not ML)</p>
+<p>- 15 themes, each with keyword patterns and channel name signals</p>
+<p>- Channel match weight: 3× keyword match</p>
+<p>- Falls back to "Other" if no signal detected</p>
+<p>- Full rules in Documentation/theme_classification_rules.md</p>
+<br>
+<hr>
+<br>
+<h2>Known Limitations</h2>
+<br>
+<table>
+<tr><th>Limitation</th><th>Impact</th></tr>
+<tr><td>384 deleted/private videos</td><td>13.5% of archive content is unrecoverable</td></tr>
+<tr><td>Tags missing for ~30%</td><td>Classifier relies on title + channel when tags absent</td></tr>
+<tr><th>Watch Later playlist dominates</th><th>2,434 of 3,536 rows are from a single catch-all playlist. Theme signal is weaker for unclassified saves.</th></tr>
+<tr><td>API hydration timestamp</td><td>View counts and like counts captured at hydration time (April 2026), not at time of save</td></tr>
+<tr><td>Timestamps in UTC</td><td>Day-of-week and hour analysis is UTC — local timezone not recorded</td></tr>
+<tr><th>No watch history</th><th>Archive reflects saves, not views. A video can be saved without being watched.</th></tr>
+</table>
+<br></section><section id="personal-learning-profile"><h1>Personal Learning Profile</h1>
+<p><strong>Based on observable archive data only.</strong>  </p>
+<p>Generated: 2026-06-28</p>
+<br>
+<hr>
+<br>
+<h2>Format Preferences</h2>
+<br>
+<table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Average video duration saved</td><td>19.7 minutes</td></tr>
+<tr><td>Long-form (30+ min)</td><td>13.1% of archive</td></tr>
+<tr><th>Short-form (<10 min)</th><th>52.3% of archive</th></tr>
+<tr><td>Total saved content estimate</td><td>1,018 hours</td></tr>
+</table>
+<br>
+<p><strong>Observable pattern:</strong> The data suggests a preference for sustained engagement over short clips. The average video saved is longer than the YouTube average of approximately 7 minutes. Long-form content (30+ min) appears disproportionately in discipline, podcast, and instructional categories.</p>
+<br>
+<hr>
+<br>
+<h2>Domain Depth Indicators</h2>
+<br>
+<p>The archive contains multiple sub-playlists per major domain, indicating systematic rather than casual engagement:</p>
+<br>
+<p><strong>Brazilian Jiu-Jitsu</strong> — 12+ sub-playlists:</p>
+<p>- Takedowns, Guard Work, Submissions, Defense, Counters, Drills, No-Gi, Stand-Up, Combos, Masterclass, Competition Motivation, Defense</p>
+<br>
+<p><strong>German Language</strong> — Multiple tracks:</p>
+<p>- B2 Exam preparation, Practice, Artist/Cultural exposure</p>
+<br>
+<p><strong>Barber Craft</strong> — Separated by purpose:</p>
+<p>- Technique videos, Brand-building, Business development</p>
+<br>
+<p><strong>Observable pattern:</strong> Complex domains are decomposed into sub-tracks rather than saved to a single playlist. This is consistent with structured study behavior.</p>
+<br>
+<hr>
+<br>
+<h2>Creator Loyalty</h2>
+<br>
+<p>Channels appearing across 4+ life phases (observable persistence):</p>
+<br>
+<table>
+<tr><th>Channel</th><th>First Phase</th><th>Still Phase 6?</th><th>Notes</th></tr>
+<tr><td>etthehiphoppreacher</td><td>Phase 1 (2016)</td><td>Yes</td><td>147 total saves</td></tr>
+<tr><td>ATHLEAN-X™</td><td>Phase 1 (2016)</td><td>Partial</td><td>Health/fitness anchor</td></tr>
+<tr><th>Jocko Podcast</th><th>Phase 3 (2020)</th><th>Yes</th><th>Discipline/military</th></tr>
+<tr><td>Bernardo Faria BJJ Fanatics</td><td>Phase 3 (2020)</td><td>Yes</td><td>BJJ technical</td></tr>
+</table>
+<br>
+<p><strong>Observable pattern:</strong> A small number of creators appear across multiple years without abandonment. This may indicate that their content aligns consistently with ongoing goals rather than transient interests.</p>
+<br>
+<hr>
+<br>
+<h2>Interest Persistence Table</h2>
+<br>
+<table>
+<tr><th>Interest</th><th>First Appears</th><th>Active in Phase 6?</th><th>Est. Duration</th></tr>
+<tr><td>Brazilian Jiu-Jitsu</td><td>2017</td><td>Yes</td><td>7+</td></tr>
+<tr><td>Discipline / Mindset</td><td>2016</td><td>Yes</td><td>9+</td></tr>
+<tr><th>Barber / Craft</th><th>2018</th><th>Yes</th><th>6+</th></tr>
+<tr><td>German Language</td><td>2018</td><td>Yes</td><td>6+</td></tr>
+<tr><td>Spiritual / Faith</td><td>2016</td><td>Yes</td><td>9+</td></tr>
+<tr><th>Finance / Wealth</th><th>2018</th><th>Partial</th><th>4+</th></tr>
+<tr><td>Health / Fitness</td><td>2016</td><td>Yes</td><td>9+</td></tr>
+<tr><td>Politics / News</td><td>2017</td><td>Partial</td><td>5 then recedes</td></tr>
+<tr><th>Philosophy / Masculinity</th><th>2016</th><th>Partial</th><th>Peaks Ph.1, recedes</th></tr>
+<tr><td>Music</td><td>2016</td><td>Yes</td><td>Sustained</td></tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Phase-by-Phase Learning Behavior</h2>
+<br>
+<p><strong>Phase 1 (2016–2017):</strong> Identity and physical foundation. Philosophy/masculinity and health content dominate. Early motivation infrastructure.</p>
+<br>
+<p><strong>Phase 2 (2018–2019):</strong> Skill acquisition. Barber craft enters. German language study begins. Music volume spikes.</p>
+<br>
+<p><strong>Phase 3 (2020–2021):</strong> Deep study period. Discipline content reaches its first major peak. BJJ emerges as a serious domain. Political awareness content rises.</p>
+<br>
+<p><strong>Phase 4 (2022):</strong> Consolidation. Discipline content dominates 3 years in a row. German exam preparation is visible. BJJ refines.</p>
+<br>
+<p><strong>Phase 5 (2023):</strong> BJJ takes command — 320 videos, becoming the single dominant domain. Competition preparation structure visible.</p>
+<br>
+<p><strong>Phase 6 (2024–2026):</strong> Highest-volume phase. BJJ (650+ videos) and Discipline remain core. New technical and systems content entering.</p>
+<br>
+<hr>
+<br>
+<h2>Caveats</h2>
+<br>
+<p>- This profile is based on playlist saves, not verified watch history.</p>
+<p>- A saved video may not have been watched.</p>
+<p>- Interpretation of intent is inference, not fact.</p>
+<p>- Psychological claims are explicitly avoided.</p>
+<br></section><section id="research-findings"><h1>Research Findings</h1>
+<p><strong>YouTube History Research Project</strong>  </p>
+<p>Generated: 2026-06-28</p>
+<br>
+<hr>
+<br>
+<h2>Finding 1: The Archive Is Structurally Organized, Not Algorithmically Generated</h2>
+<br>
+<p><strong>Evidence:</strong> 98 named playlists with deliberate titles covering sub-domains within broader topics. Playlist names include technique-specific BJJ categories (e.g., "Ankle Lock Defense", "Collar Drag", "Takedown BJJ"), structured language milestones (B2, German 2 Exam), and purpose-separated barber content.</p>
+<br>
+<p><strong>Conclusion (supported):</strong> The curation behavior visible in the playlist taxonomy alone indicates intentional organization. The content of the playlists reinforces this. This archive was constructed, not accumulated.</p>
+<br>
+<hr>
+<br>
+<h2>Finding 2: Brazilian Jiu-Jitsu Is the Dominant Study Domain</h2>
+<br>
+<p><strong>Evidence:</strong> 1112 videos classified as BJJ/Grappling (35.9% of active archive). 12+ dedicated sub-playlists. Channel analysis confirms consistent return to specific technical coaches (Knight Jiu-Jitsu, BIG OSS, ROYDEAN, JonThomasBJJ, CVBJJ Online, Bernardo Faria, The Art of Skill).</p>
+<br>
+<p><strong>Conclusion (supported):</strong> BJJ is not a casual interest. The depth of coverage — technique-specific playlists, multiple coaches, competition preparation content — is consistent with serious study of a complex physical discipline.</p>
+<br>
+<hr>
+<br>
+<h2>Finding 3: etthehiphoppreacher Is the Most Persistent Influence</h2>
+<br>
+<p><strong>Evidence:</strong> 147 total saves. Present in all 6 life phases. Peak concentration in Phase 4 (2022) with 63+ entries in a single phase. No other creator matches both volume and longevity in this archive.</p>
+<br>
+<p><strong>Conclusion (supported):</strong> This creator's content was returned to consistently across 9 years. Based on observable save behavior, this is not passive consumption of a trending creator — it is sustained engagement.</p>
+<br>
+<hr>
+<br>
+<h2>Finding 4: 2024 Was the Highest-Activity Year</h2>
+<br>
+<p><strong>Evidence:</strong> 743 videos added in 2024 — the peak year across the entire archive. Phase 6 (2024–2026) accounts for more total entries than any other phase.</p>
+<br>
+<p><strong>Conclusion (supported):</strong> The archive owner's curation activity accelerated in the most recent phase. The archive is not winding down — it is intensifying.</p>
+<br>
+<hr>
+<br>
+<h2>Finding 5: Political Content Shows a Clear Arc</h2>
+<br>
+<p><strong>Evidence:</strong> Politics/News content peaks in Phase 3 (2020–2021) with 72 entries. Channels include Redacted, WeAreChange, SGTreport, Project Veritas, and Hibbeler Productions. Content volume drops significantly in Phase 4 and beyond.</p>
+<br>
+<p><strong>Conclusion (supported):</strong> Political content entered the archive during a specific period and receded. This is consistent with a period of heightened external interest followed by reduced engagement with that category.</p>
+<br>
+<hr>
+<br>
+<h2>Finding 6: 384 Videos Are Permanently Lost</h2>
+<br>
+<p><strong>Evidence:</strong> 384 unique video IDs returned <code>unavailable</code> from the YouTube Data API v3. The content of these videos cannot be recovered through the API.</p>
+<br>
+<p><strong>Conclusion (supported):</strong> 13.5% of the archive is unrecoverable. The actual breadth of topics studied is wider than what is currently measurable. Deletion clusters in early phases and political content categories.</p>
+<br>
+<hr>
+<br>
+<h2>Finding 7: Long-Form Is the Structural Preference</h2>
+<br>
+<p><strong>Evidence:</strong> Average duration 19.7 minutes. 13.1% of saved videos exceed 30 minutes. Highest-duration content includes Jocko Podcast episodes (2–4 hours), etthehiphoppreacher (60–90 min), and BJJ instructionals (30–90 min).</p>
+<br>
+<p><strong>Conclusion (supported):</strong> The data suggests a preference for sustained engagement. Short-form content in the archive is concentrated in music and BJJ technique clips — specific functional use cases — rather than distributed evenly across all domains.</p>
+<br></section><section id="future-questions"><h1>Future Questions</h1>
+<p><strong>YouTube History Research Project</strong>  </p>
+<p>Generated: 2026-06-28</p>
+<br>
+<hr>
+<br>
+<p>These questions emerge from the data but cannot be answered by the current dataset alone.</p>
+<br>
+<hr>
+<br>
+<h2>Questions About Behavior</h2>
+<br>
+<p>1. <strong>What percentage of saved videos were actually watched?</strong></p>
+<p>   The current dataset reflects saves, not views. Integration with YouTube watch history export would allow correlation analysis.</p>
+<br>
+<p>2. <strong>Do BJJ saves correlate with real-world competition dates?</strong></p>
+<p>   If tournament participation dates are known, it would be possible to test whether save activity spikes before events.</p>
+<br>
+<p>3. <strong>What triggered the acceleration in 2024?</strong></p>
+<p>   743 saves in a single year is the peak of the archive. External context would be required to interpret this.</p>
+<br>
+<p>4. <strong>Which deleted videos belong to which theme?</strong></p>
+<p>   384 videos are unrecoverable. Probabilistic analysis using playlist membership might estimate the theme distribution of lost content.</p>
+<br>
+<hr>
+<br>
+<h2>Questions About Learning Outcomes</h2>
+<br>
+<p>5. <strong>Did German language learning produce fluency?</strong></p>
+<p>   The archive shows CEFR-level progression (B2 exam prep). Real-world usage data would be needed to assess outcome.</p>
+<br>
+<p>6. <strong>How does BJJ technical study correlate with mat time?</strong></p>
+<p>   Video study is one input. Training hours, competitions, and belt progression are separate data points not captured here.</p>
+<br>
+<p>7. <strong>Which channels produced the most durable mindset influence?</strong></p>
+<p>   Duration of return to a creator is measurable. Impact on decisions or behavior is not.</p>
+<br>
+<hr>
+<br>
+<h2>Questions About the Archive Itself</h2>
+<br>
+<p>8. <strong>What does the Watch Later playlist actually contain by topic?</strong></p>
+<p>   With 2,434 entries, Watch Later is the largest single playlist. Full theme analysis of this playlist alone would significantly change aggregate statistics.</p>
+<br>
+<p>9. <strong>Are there patterns in <em>when</em> within a day videos are saved?</strong></p>
+<p>   The current dataset captures UTC hour. With timezone adjustment, morning vs. evening save behavior could be analyzed.</p>
+<br>
+<p>10. <strong>What would a subscription history analysis add?</strong></p>
+<p>    Subscriptions represent intent-to-follow, not just individual video saves. YouTube Takeout includes subscription data — integrating it would add another layer.</p>
+<br>
+<hr>
+<br>
+<h2>Dataset Expansion Opportunities</h2>
+<br>
+<table>
+<tr><th>Dataset</th><th>What It Would Add</th></tr>
+<tr><td>YouTube watch history</td><td>Verify which saved videos were actually watched</td></tr>
+<tr><td>YouTube search history</td><td>Reveal information-seeking behavior and curiosity trails</td></tr>
+<tr><th>YouTube subscriptions export</th><th>Map channel relationships and creator loyalty intentions</th></tr>
+<tr><td>YouTube comments export</td><td>Surface active engagement vs. passive consumption</td></tr>
+<tr><td>Training logs / competition records</td><td>Correlate BJJ study with physical practice</td></tr>
+<tr><th>Language learning records</th><th>Correlate German study with measurable proficiency milestones</th></tr>
+</table>
+<br></section>
+</main>
+<footer>YouTube History Research Project &mdash; Generated 2026-06-28</footer>
+</body>
+</html>

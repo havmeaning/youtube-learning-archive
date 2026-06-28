@@ -1,0 +1,25 @@
+# Private data
+Raw/
+Clean/
+Backups/
+*.env
+.env
+
+# Row-level personal history exports
+*history_clean*.csv
+*history_themed*.csv
+master_table*.csv
+hydrated_videos.csv
+top_viewed_videos.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
