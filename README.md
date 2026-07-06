@@ -28,7 +28,8 @@ Public release note: raw and row-level datasets are excluded from this package.
 - Dominant theme: Brazilian Jiu-Jitsu
 - Peak activity year: 2024
 - The archive shows repeated long-term study signals across skill, discipline, craft, and systems-oriented content.
-- ## Evidence Visuals
+
+## Evidence Visuals
 
 - [Modified Canto Choke Evidence Visuals](Evidence/modified-canto-choke/) — face-blurred visual sequence supporting the Brazilian Jiu-Jitsu learning-archive case study.
 - Main archive image: [`archive_main_picture_face_blurred.png`](Evidence/modified-canto-choke/archive_main_picture_face_blurred.png)
@@ -40,14 +41,13 @@ YouTube Research Public/
     Analysis/          Aggregate CSV outputs only
     Charts/            PNG visualizations
     Documentation/     Data dictionary and classification rules
+    Evidence/          Privacy-treated evidence visuals
     Reports/           Markdown and HTML reports
     Scripts/           Reproducible analysis scripts
     README.md
     requirements.txt
     .gitignore
     PUBLICATION_CHECKLIST.md
-```
-    Evidence/          Privacy-treated evidence visuals
 ## How to Reproduce With Your Own Data
 
 1. Export your YouTube data.
