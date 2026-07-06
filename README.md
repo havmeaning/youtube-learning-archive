@@ -2,7 +2,7 @@
 
 A reproducible personal data analysis project that turns an enriched YouTube archive into a learning-history case study.
 
-This public package is designed for portfolio review. It includes scripts, charts, documentation, reports, and aggregate summary tables. It intentionally excludes raw YouTube export files and row-level personal viewing-history datasets.
+This public package is designed for portfolio review. It includes scripts, charts, documentation, reports, aggregate summary tables, and selected privacy-treated evidence visuals. It intentionally excludes raw YouTube export files and row-level personal viewing-history datasets.
 
 ## Project Goal
 
@@ -48,6 +48,8 @@ YouTube Research Public/
     requirements.txt
     .gitignore
     PUBLICATION_CHECKLIST.md
+```
+
 ## How to Reproduce With Your Own Data
 
 1. Export your YouTube data.
@@ -78,7 +80,7 @@ This public package excludes:
 - environment files
 - Python cache files
 
-Only aggregate summaries, reports, charts, scripts, and documentation are included.
+Only aggregate summaries, reports, charts, scripts, documentation, and privacy-treated evidence visuals are included.
 
 ## Limitations
 
@@ -87,6 +89,7 @@ Only aggregate summaries, reports, charts, scripts, and documentation are includ
 - Classification quality depends on title, tags, channel names, and descriptions.
 - YouTube categories are broad and often not specific enough for research themes.
 - Saved videos are not the same as watched videos, unless the source archive explicitly records watch events.
+- Face blurring reduces identifiability but does not guarantee anonymity because clothing, body shape, gym context, and source-video context may still be recognizable.
 
 ## Suggested GitHub Use
 
@@ -99,3 +102,4 @@ This package can be published as a portfolio project demonstrating:
 - visualization
 - reproducible reporting
 - privacy-aware public release practices
+- evidence packaging with public/private data separation
