@@ -23,3 +23,13 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# Private data and secrets
+*.key
+takeout/
+private/
+secrets/
+outputs/raw/
+outputs/private/
+*.pbix
+local_backup_before_rebase/

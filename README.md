@@ -1,4 +1,4 @@
-# YouTube History Research Project
+﻿# YouTube History Research Project
 
 A reproducible personal data analysis project that turns an enriched YouTube archive into a learning-history case study.
 
@@ -31,7 +31,7 @@ Public release note: raw and row-level datasets are excluded from this package.
 
 ## Evidence Visuals
 
-- [Modified Canto Choke Evidence Visuals](Evidence/modified-canto-choke/) — face-blurred visual sequence supporting the Brazilian Jiu-Jitsu learning-archive case study.
+- [Modified Canto Choke Evidence Visuals](Evidence/modified-canto-choke/) â€” face-blurred visual sequence supporting the Brazilian Jiu-Jitsu learning-archive case study.
 - Main archive image: [`archive_main_picture_face_blurred.png`](Evidence/modified-canto-choke/archive_main_picture_face_blurred.png)
 
 ## Folder Structure
@@ -103,3 +103,15 @@ This package can be published as a portfolio project demonstrating:
 - reproducible reporting
 - privacy-aware public release practices
 - evidence packaging with public/private data separation
+
+## Power BI Dashboard
+
+A Power BI dashboard has been added under `/dashboard`.
+
+It contains a portfolio-safe visualization layer for the YouTube Learning Archive, including:
+
+- Knowledge Intelligence Overview
+- Operator Evolution Timeline
+- Channel Influence Map
+
+Raw personal data is excluded for privacy.
