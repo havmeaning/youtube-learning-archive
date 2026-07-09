@@ -17,6 +17,15 @@ Maps learning activity across major development phases.
 ### 3. Channel Influence Map
 Identifies repeated knowledge sources and long-term learning inputs.
 
+### 4. Evidence Validation Dashboard
+Summarizes the validation layer used to separate portfolio-safe evidence from private source data.
+
+### 5. Skill Transfer Map
+Connects learning patterns across domains and highlights transferable operator capabilities.
+
+### 6. System Architecture
+Documents the high-level data flow from private archive source to public-safe dashboard artifact.
+
 ## Technical Stack
 
 - Google Takeout
@@ -42,3 +51,4 @@ This dashboard demonstrates applied skills in:
 - Evidence modeling
 - AI-assisted analysis
 - Personal knowledge architecture
+

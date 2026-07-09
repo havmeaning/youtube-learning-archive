@@ -33,3 +33,4 @@ outputs/raw/
 outputs/private/
 *.pbix
 local_backup_before_rebase/
+private_powerbi/

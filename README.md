@@ -113,5 +113,9 @@ It contains a portfolio-safe visualization layer for the YouTube Learning Archiv
 - Knowledge Intelligence Overview
 - Operator Evolution Timeline
 - Channel Influence Map
+- Evidence Validation Dashboard
+- Skill Transfer Map
+- System Architecture
 
-Raw personal data is excluded for privacy.
+Raw personal data is excluded for privacy. The Power BI source file (`.pbix`) is kept private and is not tracked in GitHub.
+
