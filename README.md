@@ -1,61 +1,80 @@
-﻿# YouTube History Research Project
+# YouTube Learning Archive Intelligence System
 
-A reproducible personal data analysis project that turns an enriched YouTube archive into a learning-history case study.
+> Converting 9.5 years of unstructured self-education activity into a governed, queryable evidence base.
 
-This public package is designed for portfolio review. It includes scripts, charts, documentation, reports, aggregate summary tables, and selected privacy-treated evidence visuals. It intentionally excludes raw YouTube export files and row-level personal viewing-history datasets.
+The YouTube Learning Archive turns a private playlist-save export into a reproducible, portfolio-safe analytics package. A Python pipeline inspects and cleans the private source, enriches video IDs with YouTube metadata, engineers time and format features, applies transparent theme rules, and produces aggregate tables, charts, reports, and a Power BI presentation layer.
 
-## Project Goal
+The public repository demonstrates data engineering, analytical modeling, documentation, and release governance without publishing raw exports, row-level personal data, API keys, or the private Power BI file. Saved videos are collection and interest signals; they are not proof that a video was watched, understood, or mastered.
 
-The project analyzes a curated YouTube archive as a record of self-directed learning. It asks:
+## Key metrics
 
-- Which creators and themes appeared most often?
-- How did interests evolve over time?
-- Which domains became sustained study areas?
-- What does the archive show about learning behavior, without making unsupported psychological claims?
+| Metric | Verified value |
+|---|---:|
+| Playlist entries processed | 3,536 |
+| Unique video IDs hydrated | 2,847 |
+| Active or retrievable entries | 3,101 |
+| Unavailable, deleted, or private entries | 435 |
+| Archive span | October 2016-April 2026 (9.5 years) |
+| Dominant classified theme | Brazilian Jiu-Jitsu |
+| Peak activity year | 2024 |
 
-## Data Source
+## Portfolio package
 
-The private source data came from a YouTube history / playlist archive that was hydrated with the YouTube Data API v3. The hydration added metadata such as video title, channel, published date, category, duration, view count, tags, and availability status.
+- [Case study](CASE_STUDY.md) - problem, architecture, methodology, findings, limitations, and employer value
+- [Dashboard gallery](dashboard/README.md) - verified screenshots and page-by-page evidence status
+- [Technical report](Reports/technical_report.md) - pipeline and feature-engineering details
+- [Research findings](Reports/research_findings.md) - findings with explicit evidence boundaries
+- [Data dictionary](Documentation/data_dictionary.md) - private input schema and data-quality notes
+- [Theme classification rules](Documentation/theme_classification_rules.md) - transparent scoring logic
+- [Publication checklist](PUBLICATION_CHECKLIST.md) - release safety controls
 
-Public release note: raw and row-level datasets are excluded from this package.
+## The data problem
 
-## Key Findings
+The private source is a playlist-save archive: repeated video IDs, timestamps, playlist labels, missing metadata, and records for videos that later became unavailable. On its own, it cannot answer which themes persisted, how collection activity changed over time, or which evidence can safely be published.
 
-- Total playlist entries analyzed in the private run: 3,536
-- Unique video IDs hydrated: 2,847
-- Active/retrievable entries in final analysis: 3,101
-- Unavailable/deleted/private entries: 435
-- Dominant theme: Brazilian Jiu-Jitsu
-- Peak activity year: 2024
-- The archive shows repeated long-term study signals across skill, discipline, craft, and systems-oriented content.
-
-## Evidence Visuals
-
-- [Modified Canto Choke Evidence Visuals](Evidence/modified-canto-choke/) â€” face-blurred visual sequence supporting the Brazilian Jiu-Jitsu learning-archive case study.
-- Main archive image: [`archive_main_picture_face_blurred.png`](Evidence/modified-canto-choke/archive_main_picture_face_blurred.png)
-
-## Folder Structure
+The pipeline converts that source into governed analytical outputs:
 
 ```text
-YouTube Research Public/
-    Analysis/          Aggregate CSV outputs only
-    Charts/            PNG visualizations
-    Documentation/     Data dictionary and classification rules
-    Evidence/          Privacy-treated evidence visuals
-    Reports/           Markdown and HTML reports
-    Scripts/           Reproducible analysis scripts
-    README.md
-    requirements.txt
-    .gitignore
-    PUBLICATION_CHECKLIST.md
+Private playlist-save export
+  -> metadata hydration
+  -> cleaning and feature engineering
+  -> rule-based theme classification
+  -> aggregate statistics and charts
+  -> reports and portfolio-safe dashboard screenshots
 ```
 
-## How to Reproduce With Your Own Data
+The private inputs are required to reproduce the reported metrics. They are intentionally absent from this public repository.
 
-1. Export your YouTube data.
-2. Hydrate video IDs using the YouTube Data API v3 or an equivalent metadata source.
-3. Place your private input files in a local `Raw/` folder.
-4. Install dependencies:
+## Evidence boundary
+
+This project distinguishes among several kinds of evidence:
+
+- **Playlist-save activity** records collection behavior, not confirmed viewing.
+- **Watch-history evidence** would be needed to establish that a video played; it is not included here.
+- **Hydrated metadata** describes videos and channels at the time of API enrichment.
+- **Inferred themes** are outputs of a documented rule-based classifier, not ground truth.
+- **Repository artifacts** demonstrate implementation and publication-governance work.
+- **Skill or mastery claims** require independent evidence beyond saved-video records.
+
+## Repository structure
+
+```text
+Analysis/          Aggregate CSV outputs
+Charts/            Aggregate PNG visualizations
+Documentation/     Data dictionary and classification rules
+Evidence/          Privacy-treated supporting visuals
+Reports/           Markdown and HTML reports
+Scripts/           Reproducible analysis and release-validation scripts
+dashboard/         Power BI documentation and public screenshots
+CASE_STUDY.md       Portfolio case study
+```
+
+## Reproduce with your own private data
+
+1. Export your own YouTube playlist data.
+2. Hydrate video IDs with the YouTube Data API v3 or an equivalent metadata source.
+3. Keep the source files in a local, untracked `Raw/` directory.
+4. Install the analysis dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -67,55 +86,34 @@ pip install -r requirements.txt
 python Scripts/run_all.py
 ```
 
-Do not commit `Raw/`, `Clean/`, or row-level CSV outputs to a public repository.
+The pipeline expects `Raw/master_table_hydrated.csv` and `Raw/hydrated_videos.csv`. Do not commit `Raw/`, `Clean/`, hydrated datasets, or other row-level outputs.
 
-## Privacy Approach
+## Validate a public release
 
-This public package excludes:
+Run the standard-library release check before publishing:
 
-- raw YouTube exports
-- hydrated full row-level datasets
-- clean/themed row-level personal history files
-- API keys
-- environment files
-- Python cache files
+```bash
+python Scripts/validate_public_release.py
+```
 
-Only aggregate summaries, reports, charts, scripts, documentation, and privacy-treated evidence visuals are included.
+The validator checks required documents, tracked filenames, Markdown links, screenshot dimensions and canonical names, and the Git tracked-file count. A missing Channel Influence Map export is reported as a warning; prohibited data or a tracked placeholder is a failure.
+
+## Privacy approach
+
+The public package excludes raw Google Takeout exports, hydrated and cleaned row-level datasets, watch history, API keys, environment files, local Power BI working directories, backups, and `.pbix` files. The tracked CSVs contain grouped analytical outputs rather than individual video records. Aggregate reports still reveal an interest profile, so every release requires a human privacy review.
+
+The face-blurred [Modified Canto Choke evidence visuals](Evidence/modified-canto-choke/) are intentionally narrow supporting evidence. Face blurring reduces identifiability but does not guarantee anonymity because clothing, body shape, setting, and source context may remain recognizable.
+
+## Dashboard status
+
+Five documented Power BI pages have non-placeholder public screenshots. The Channel Influence Map page is documented, but its genuine export has not been supplied. The repository does not embed a substitute. See the [dashboard evidence table](dashboard/README.md#evidence-status) for page-level details and screenshot-currency notes.
 
 ## Limitations
 
-- Deleted/private videos cannot be recovered through the YouTube API.
-- Theme classification is rule-based, not machine learning.
-- Classification quality depends on title, tags, channel names, and descriptions.
-- YouTube categories are broad and often not specific enough for research themes.
-- Saved videos are not the same as watched videos, unless the source archive explicitly records watch events.
-- Face blurring reduces identifiability but does not guarantee anonymity because clothing, body shape, gym context, and source-video context may still be recognizable.
-
-## Suggested GitHub Use
-
-This package can be published as a portfolio project demonstrating:
-
-- API-based data enrichment
-- data cleaning
-- feature engineering
-- rule-based classification
-- visualization
-- reproducible reporting
-- privacy-aware public release practices
-- evidence packaging with public/private data separation
-
-## Power BI Dashboard
-
-A Power BI dashboard has been added under `/dashboard`.
-
-It contains a portfolio-safe visualization layer for the YouTube Learning Archive, including:
-
-- Knowledge Intelligence Overview
-- Operator Evolution Timeline
-- Channel Influence Map
-- Evidence Validation Dashboard
-- Skill Transfer Map
-- System Architecture
-
-Raw personal data is excluded for privacy. The Power BI source file (`.pbix`) is kept private and is not tracked in GitHub.
+- Deleted, private, or restricted videos cannot be fully recovered through the API.
+- Theme classification is rule-based and depends on titles, tags, channel names, descriptions, and broad YouTube categories.
+- Metadata reflects hydration-time state, not necessarily the state when an item was saved.
+- Saved records do not establish viewing, comprehension, behavior change, demonstrated skill, or mastery.
+- The private source data is required for end-to-end metric reproduction.
+- Dashboard screenshots are public evidence of exported pages, not a substitute for the private `.pbix` model.
 

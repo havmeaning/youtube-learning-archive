@@ -1,4 +1,4 @@
-# Personal Learning Profile
+# Playlist-Save Pattern Profile
 **Based on observable archive data only.**  
 Generated: 2026-06-28
 
@@ -13,13 +13,13 @@ Generated: 2026-06-28
 | Short-form (<10 min) | 52.3% of archive |
 | Total saved content estimate | 1,018 hours |
 
-**Observable pattern:** The data suggests a preference for sustained engagement over short clips. The average video saved is longer than the YouTube average of approximately 7 minutes. Long-form content (30+ min) appears disproportionately in discipline, podcast, and instructional categories.
+**Observable pattern:** The saved-item distribution includes substantial long-form material. Duration describes the items collected; it does not establish how long they were watched.
 
 ---
 
 ## Domain Depth Indicators
 
-The archive contains multiple sub-playlists per major domain, indicating systematic rather than casual engagement:
+The archive contains multiple sub-playlists per major domain, indicating deliberate organization of saved material:
 
 **Brazilian Jiu-Jitsu** — 12+ sub-playlists:
 - Takedowns, Guard Work, Submissions, Defense, Counters, Drills, No-Gi, Stand-Up, Combos, Masterclass, Competition Motivation, Defense
@@ -30,7 +30,7 @@ The archive contains multiple sub-playlists per major domain, indicating systema
 **Barber Craft** — Separated by purpose:
 - Technique videos, Brand-building, Business development
 
-**Observable pattern:** Complex domains are decomposed into sub-tracks rather than saved to a single playlist. This is consistent with structured study behavior.
+**Observable pattern:** Complex domains are decomposed into sub-tracks rather than saved to a single playlist. This supports structured curation, not a verified learning outcome.
 
 ---
 
@@ -45,7 +45,7 @@ Channels appearing across 4+ life phases (observable persistence):
 | Jocko Podcast | Phase 3 (2020) | Yes | Discipline/military |
 | Bernardo Faria BJJ Fanatics | Phase 3 (2020) | Yes | BJJ technical |
 
-**Observable pattern:** A small number of creators appear across multiple years without abandonment. This may indicate that their content aligns consistently with ongoing goals rather than transient interests.
+**Observable pattern:** A small number of creators appear across multiple years. Any claim about goals or influence would require evidence beyond save records.
 
 ---
 
