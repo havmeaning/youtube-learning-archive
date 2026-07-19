@@ -2,8 +2,14 @@
 Raw/
 Clean/
 Backups/
+*.bak
+*.backup
+*takeout*.zip
+*watch_history*.json
+*watch-history*.json
 *.env
 .env
+.env.*
 
 # Row-level personal history exports
 *history_clean*.csv
@@ -11,12 +17,20 @@ Backups/
 master_table*.csv
 hydrated_videos.csv
 top_viewed_videos.csv
+*row_level*.csv
+*row-level*.csv
+*playlist_entries*.csv
+*watch_history*.csv
+*watch-history*.csv
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # OS/editor
 .DS_Store
@@ -26,11 +40,17 @@ Thumbs.db
 
 # Private data and secrets
 *.key
+*.pem
+*.p12
+credentials*.json
+client_secret*.json
 takeout/
 private/
 secrets/
 outputs/raw/
 outputs/private/
 *.pbix
+.powerbi/
+PowerBI/
 local_backup_before_rebase/
 private_powerbi/

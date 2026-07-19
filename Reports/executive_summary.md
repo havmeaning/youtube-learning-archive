@@ -1,5 +1,5 @@
 # Executive Summary
-**YouTube History Research Project**  
+**YouTube Learning Archive Intelligence System**
 Generated: 2026-06-28
 
 ---
@@ -8,7 +8,7 @@ Generated: 2026-06-28
 
 This project analyzes a personal YouTube playlist archive spanning approximately 9.5 years (October 2016 – April 2026). The archive consists of 3,536 playlist entries across 98 named playlists, referencing 2,847 unique video IDs.
 
-The framing thesis: **this archive is not entertainment history. It is a behavioral record of self-directed learning across craft, language, body discipline, systems thinking, and mindset construction.**
+The archive is analyzed as a record of playlist-save and collection activity across craft, language, physical disciplines, systems, and mindset themes. Those signals do not establish viewing, comprehension, or mastery.
 
 ---
 
@@ -102,12 +102,12 @@ The framing thesis: **this archive is not entertainment history. It is a behavio
 
 ## Key Findings
 
-1. **BJJ/Grappling dominates the archive** at 1112 videos (35.9%). The archive contains 12+ sub-playlists covering distinct technical areas — this is systematic technical study, not passive viewing.
+1. **BJJ/Grappling dominates the classified archive** at 1112 active entries (35.9%). The archive contains 12+ sub-playlists covering distinct technical areas, which supports a structured collection signal but does not prove viewing or study outcomes.
 
-2. **Discipline/Mindset content is structurally persistent** across all 6 life phases. This is not a motivational phase — it is load-bearing infrastructure that never leaves.
+2. **Discipline/Mindset content is structurally persistent** across all 6 defined phases. The category remains present across the reported collection timeline.
 
 3. **Activity peaked in 2024** with 743 additions — the single highest year. The most intensive archiving period is the most recent one.
 
-4. **Long-form preference is strong** (13.1% of content is 30+ minutes). The average video saved is 19.7 minutes. This is not a clip-watching pattern.
+4. **Long-form material is represented** (13.1% of saved content is 30+ minutes), and the average saved video is 19.7 minutes. These duration statistics describe saved items, not verified viewing behavior.
 
-5. **435 videos are permanently lost** (13.5% deletion rate). A meaningful portion of the learning record is unrecoverable.
+5. **435 playlist entries were unavailable** (12.3% of 3,536 entries) in the reported run because their videos were deleted, private, restricted, or otherwise not retrievable.

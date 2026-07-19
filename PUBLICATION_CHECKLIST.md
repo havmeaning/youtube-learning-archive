@@ -1,50 +1,49 @@
-# Publication Checklist
+# Publication checklist
 
-Use this before uploading the project to GitHub or sharing it publicly.
+Use this checklist before pushing a public release of the YouTube Learning Archive.
 
-## Privacy Checks
+## Automated validation
 
-- [ ] `Raw/` folder is not included.
-- [ ] `Clean/` folder is not included.
-- [ ] No row-level YouTube history CSVs are included.
-- [ ] No API keys are present.
-- [ ] No `.env` file is present.
-- [ ] No personal account export files are present.
-- [ ] No full watch-history or playlist-entry dataset is included.
+- [ ] Run `python Scripts/validate_public_release.py`.
+- [ ] Confirm the command exits successfully and review every warning.
+- [ ] Run `git diff --check`.
+- [ ] Run `python -m compileall Scripts`.
+- [ ] Record the tracked-file count reported by the validator for the release review.
 
-## File Checks
+## Privacy checks
 
-- [ ] `README.md` exists.
-- [ ] `.gitignore` exists.
-- [ ] `requirements.txt` exists.
-- [ ] `Scripts/` contains the reproducible pipeline scripts.
-- [ ] `Documentation/` contains the data dictionary and classification rules.
-- [ ] `Reports/` contains markdown reports.
-- [ ] `Charts/` contains PNG outputs.
-- [ ] `Analysis/` contains aggregate CSV summaries only.
+- [ ] No `Raw/`, `Clean/`, Takeout, backup, or private working directory is tracked.
+- [ ] No playlist-entry, watch-history, hydrated, clean, or themed row-level dataset is tracked.
+- [ ] No video-level IDs, URLs, titles, timestamps, descriptions, or personal account exports were added.
+- [ ] No API key, secret, `.env`, or environment-specific credential file is tracked.
+- [ ] No `.pbix` file or private Power BI working directory is tracked.
+- [ ] Every tracked CSV has been reviewed as an aggregate output, not trusted by filename alone.
+- [ ] Aggregate channel and tag outputs have received a human disclosure-risk review.
+- [ ] Privacy-treated evidence visuals remain acceptable for public release despite residual contextual identification risk.
 
-## Data Leakage Checks
+## Documentation checks
 
-Search the project folder for sensitive strings before publishing:
+- [ ] `README.md`, `CASE_STUDY.md`, `PROJECT_MANIFEST.md`, and this checklist exist.
+- [ ] The root README links to the case study and dashboard gallery.
+- [ ] Saved playlist activity is not described as verified watch history.
+- [ ] Inferred themes are not described as proof of intent, skill, or mastery.
+- [ ] Metrics remain consistent: 3,536 entries; 2,847 unique IDs; 3,101 retrievable; 435 unavailable; 9.5 years; Brazilian Jiu-Jitsu dominant; 2024 peak.
+- [ ] Relative Markdown links resolve without machine-specific local paths.
+- [ ] No mojibake or other text-encoding artifacts remain.
 
-```powershell
-Select-String -Path .\* -Pattern "AIza","YOUTUBE_API_KEY","api_key","master_table","youtube_history_clean","youtube_history_themed" -Recurse
-```
+## Dashboard evidence checks
 
-Review every match manually.
+- [ ] Every embedded screenshot is readable and non-placeholder.
+- [ ] Screenshot filenames use canonical lowercase names.
+- [ ] No missing page is represented by a generated or reconstructed substitute.
+- [ ] A genuine `channel_influence_map.png` export has been supplied manually, or the missing-evidence warning remains prominent.
+- [ ] The stale labels inside `system_architecture.png` are corrected by a genuine re-export, or the limitation remains prominent.
+- [ ] Screenshot contents have been reviewed for row-level or identifying information.
 
-## GitHub Checks
+## GitHub checks
 
-- [ ] Repository description is clear.
-- [ ] README explains that raw data is excluded for privacy.
-- [ ] Scripts are documented.
-- [ ] Reports do not expose anything you are uncomfortable sharing.
-- [ ] Charts are safe to publish.
-- [ ] Commit history does not contain removed private files.
-
-## Final Review
-
-- [ ] Open the repo in a clean folder.
-- [ ] Confirm excluded files are truly absent.
-- [ ] Zip or commit only the public-safe folder.
-- [ ] Keep the private project folder offline or in private storage.
+- [ ] Work is on a non-default branch.
+- [ ] Only intentional files are staged.
+- [ ] Commit history is reviewed for previously published sensitive material.
+- [ ] The pull request lists validation results and unresolved evidence limitations.
+- [ ] The pull request explicitly confirms that no raw data or `.pbix` file was added.

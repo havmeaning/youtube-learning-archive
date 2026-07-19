@@ -1,4 +1,6 @@
-# Portfolio Case Study: YouTube History as a Personal Learning Archive
+# YouTube Learning Archive Intelligence System: Portfolio Case Study
+
+> The canonical, evidence-reviewed portfolio narrative is [CASE_STUDY.md](../CASE_STUDY.md). This generated report is retained as a concise pipeline summary.
 
 ## Problem
 
@@ -51,7 +53,7 @@ Channel-name matches were weighted more heavily than keyword matches because rec
 - Discipline / mindset content appeared as a persistent long-term category.
 - 2024 was the peak activity year.
 - A meaningful portion of the archive was unavailable because videos had been deleted, made private, or otherwise restricted.
-- The archive reflected structured, repeated study behavior rather than random accumulation.
+- The archive reflected structured, repeated collection behavior rather than an unorganized list of saves.
 
 ## Limitations
 

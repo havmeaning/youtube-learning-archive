@@ -110,7 +110,7 @@ yr_table = "\n".join(yr_md_rows)
 
 # ── EXECUTIVE SUMMARY ─────────────────────────────────────────────────────────
 exec_md = f"""# Executive Summary
-**YouTube History Research Project**  
+**YouTube Learning Archive Intelligence System**
 Generated: {gen_date}
 
 ---
@@ -119,7 +119,7 @@ Generated: {gen_date}
 
 This project analyzes a personal YouTube playlist archive spanning approximately 9.5 years (October 2016 – April 2026). The archive consists of {total:,} playlist entries across 98 named playlists, referencing {len(set(r.get("Video ID","") for r in rows)):,} unique video IDs.
 
-The framing thesis: **this archive is not entertainment history. It is a behavioral record of self-directed learning across craft, language, body discipline, systems thinking, and mindset construction.**
+The archive is analyzed as a record of playlist-save and collection activity across craft, language, physical disciplines, systems, and mindset themes. Those signals do not establish viewing, comprehension, or mastery.
 
 ---
 
@@ -173,15 +173,15 @@ The framing thesis: **this archive is not entertainment history. It is a behavio
 
 ## Key Findings
 
-1. **BJJ/Grappling dominates the archive** at {th_ctr.get("Brazilian Jiu-Jitsu",0)} videos ({round(th_ctr.get("Brazilian Jiu-Jitsu",0)/n_act*100,1)}%). The archive contains 12+ sub-playlists covering distinct technical areas — this is systematic technical study, not passive viewing.
+1. **BJJ/Grappling dominates the classified archive** at {th_ctr.get("Brazilian Jiu-Jitsu",0)} active entries ({round(th_ctr.get("Brazilian Jiu-Jitsu",0)/n_act*100,1)}%). The archive contains 12+ sub-playlists covering distinct technical areas, which supports a structured collection signal but does not prove viewing or study outcomes.
 
-2. **Discipline/Mindset content is structurally persistent** across all 6 life phases. This is not a motivational phase — it is load-bearing infrastructure that never leaves.
+2. **Discipline/Mindset content is structurally persistent** across all 6 defined phases. The category remains present across the reported collection timeline.
 
 3. **Activity peaked in {peak_yr}** with {yr_ctr[peak_yr]} additions — the single highest year. The most intensive archiving period is the most recent one.
 
-4. **Long-form preference is strong** ({lf_pct}% of content is 30+ minutes). The average video saved is {avg_dur_min} minutes. This is not a clip-watching pattern.
+4. **Long-form material is represented** ({lf_pct}% of saved content is 30+ minutes), and the average saved video is {avg_dur_min} minutes. These duration statistics describe saved items, not verified viewing behavior.
 
-5. **{n_del} videos are permanently lost** (13.5% deletion rate). A meaningful portion of the learning record is unrecoverable.
+5. **{n_del} playlist entries were unavailable** ({round(n_del/total*100,1)}% of {total:,} entries) in the reported run because their videos were deleted, private, restricted, or otherwise not retrievable.
 """
 with open(REPORTS / "executive_summary.md", "w", encoding="utf-8") as f:
     f.write(exec_md)
@@ -189,7 +189,7 @@ print("  Saved: Reports/executive_summary.md")
 
 # ── TECHNICAL REPORT ──────────────────────────────────────────────────────────
 tech_md = f"""# Technical Report
-**YouTube History Research Project**  
+**YouTube Learning Archive Intelligence System**
 Generated: {gen_date}
 
 ---
@@ -293,7 +293,7 @@ interest_rows = "\n".join(
     for name, start, active_, yrs in INTEREST_DATA
 )
 
-profile_md = f"""# Personal Learning Profile
+profile_md = f"""# Playlist-Save Pattern Profile
 **Based on observable archive data only.**  
 Generated: {gen_date}
 
@@ -308,13 +308,13 @@ Generated: {gen_date}
 | Short-form (<10 min) | {sf_pct}% of archive |
 | Total saved content estimate | {total_hrs:,} hours |
 
-**Observable pattern:** The data suggests a preference for sustained engagement over short clips. The average video saved is longer than the YouTube average of approximately 7 minutes. Long-form content (30+ min) appears disproportionately in discipline, podcast, and instructional categories.
+**Observable pattern:** The saved-item distribution includes substantial long-form material. Duration describes the items collected; it does not establish how long they were watched.
 
 ---
 
 ## Domain Depth Indicators
 
-The archive contains multiple sub-playlists per major domain, indicating systematic rather than casual engagement:
+The archive contains multiple sub-playlists per major domain, indicating deliberate organization of saved material:
 
 **Brazilian Jiu-Jitsu** — 12+ sub-playlists:
 - Takedowns, Guard Work, Submissions, Defense, Counters, Drills, No-Gi, Stand-Up, Combos, Masterclass, Competition Motivation, Defense
@@ -325,7 +325,7 @@ The archive contains multiple sub-playlists per major domain, indicating systema
 **Barber Craft** — Separated by purpose:
 - Technique videos, Brand-building, Business development
 
-**Observable pattern:** Complex domains are decomposed into sub-tracks rather than saved to a single playlist. This is consistent with structured study behavior.
+**Observable pattern:** Complex domains are decomposed into sub-tracks rather than saved to a single playlist. This supports structured curation, not a verified learning outcome.
 
 ---
 
@@ -340,7 +340,7 @@ Channels appearing across 4+ life phases (observable persistence):
 | Jocko Podcast | Phase 3 (2020) | Yes | Discipline/military |
 | Bernardo Faria BJJ Fanatics | Phase 3 (2020) | Yes | BJJ technical |
 
-**Observable pattern:** A small number of creators appear across multiple years without abandonment. This may indicate that their content aligns consistently with ongoing goals rather than transient interests.
+**Observable pattern:** A small number of creators appear across multiple years. Any claim about goals or influence would require evidence beyond save records.
 
 ---
 
@@ -381,7 +381,7 @@ print("  Saved: Reports/personal_learning_profile.md")
 
 # ── RESEARCH FINDINGS ─────────────────────────────────────────────────────────
 findings_md = f"""# Research Findings
-**YouTube History Research Project**  
+**YouTube Learning Archive Intelligence System**
 Generated: {gen_date}
 
 ---
@@ -390,7 +390,7 @@ Generated: {gen_date}
 
 **Evidence:** 98 named playlists with deliberate titles covering sub-domains within broader topics. Playlist names include technique-specific BJJ categories (e.g., "Ankle Lock Defense", "Collar Drag", "Takedown BJJ"), structured language milestones (B2, German 2 Exam), and purpose-separated barber content.
 
-**Conclusion (supported):** The curation behavior visible in the playlist taxonomy alone indicates intentional organization. The content of the playlists reinforces this. This archive was constructed, not accumulated.
+**Conclusion (supported):** The playlist taxonomy indicates intentional organization. This is evidence of curation structure, not proof that saved material was consumed.
 
 ---
 
@@ -398,15 +398,15 @@ Generated: {gen_date}
 
 **Evidence:** {th_ctr.get("Brazilian Jiu-Jitsu",0)} videos classified as BJJ/Grappling ({round(th_ctr.get("Brazilian Jiu-Jitsu",0)/n_act*100,1)}% of active archive). 12+ dedicated sub-playlists. Channel analysis confirms consistent return to specific technical coaches (Knight Jiu-Jitsu, BIG OSS, ROYDEAN, JonThomasBJJ, CVBJJ Online, Bernardo Faria, The Art of Skill).
 
-**Conclusion (supported):** BJJ is not a casual interest. The depth of coverage — technique-specific playlists, multiple coaches, competition preparation content — is consistent with serious study of a complex physical discipline.
+**Conclusion (supported):** BJJ is the strongest repeated collection theme. Technique-specific playlists and recurring sources support persistent interest, but the archive alone cannot establish viewing, comprehension, or physical skill.
 
 ---
 
-## Finding 3: etthehiphoppreacher Is the Most Persistent Influence
+## Finding 3: etthehiphoppreacher Is the Most Persistent Saved Source
 
 **Evidence:** {ch_ctr.get("etthehiphoppreacher",0)} total saves. Present in all 6 life phases. Peak concentration in Phase 4 (2022) with 63+ entries in a single phase. No other creator matches both volume and longevity in this archive.
 
-**Conclusion (supported):** This creator's content was returned to consistently across 9 years. Based on observable save behavior, this is not passive consumption of a trending creator — it is sustained engagement.
+**Conclusion (supported):** This creator recurs consistently across the nine-year save timeline. The archive supports persistence as a saved source, not a claim about influence or engagement.
 
 ---
 
@@ -414,7 +414,7 @@ Generated: {gen_date}
 
 **Evidence:** {yr_ctr.get("2024","?")} videos added in 2024 — the peak year across the entire archive. Phase 6 (2024–2026) accounts for more total entries than any other phase.
 
-**Conclusion (supported):** The archive owner's curation activity accelerated in the most recent phase. The archive is not winding down — it is intensifying.
+**Conclusion (supported):** The reported curation activity reached its highest annual volume in 2024. The dataset does not explain why.
 
 ---
 
@@ -422,23 +422,23 @@ Generated: {gen_date}
 
 **Evidence:** Politics/News content peaks in Phase 3 (2020–2021) with 72 entries. Channels include Redacted, WeAreChange, SGTreport, Project Veritas, and Hibbeler Productions. Content volume drops significantly in Phase 4 and beyond.
 
-**Conclusion (supported):** Political content entered the archive during a specific period and receded. This is consistent with a period of heightened external interest followed by reduced engagement with that category.
+**Conclusion (supported):** Political content has a time-bounded concentration in the archive, followed by fewer saved entries in that category. The data does not establish engagement or explain the change.
 
 ---
 
-## Finding 6: 384 Videos Are Permanently Lost
+## Finding 6: 384 Unique Video IDs Were Unavailable at Hydration
 
 **Evidence:** 384 unique video IDs returned `unavailable` from the YouTube Data API v3. The content of these videos cannot be recovered through the API.
 
-**Conclusion (supported):** 13.5% of the archive is unrecoverable. The actual breadth of topics studied is wider than what is currently measurable. Deletion clusters in early phases and political content categories.
+**Conclusion (supported):** 13.5% of the 2,847 unique hydrated IDs were unavailable at hydration, limiting content-level analysis for those IDs. At the playlist-entry level, the repository reports {n_del} unavailable entries.
 
 ---
 
-## Finding 7: Long-Form Is the Structural Preference
+## Finding 7: Long-Form Material Is Represented in the Saved Archive
 
 **Evidence:** Average duration {avg_dur_min} minutes. {lf_pct}% of saved videos exceed 30 minutes. Highest-duration content includes Jocko Podcast episodes (2–4 hours), etthehiphoppreacher (60–90 min), and BJJ instructionals (30–90 min).
 
-**Conclusion (supported):** The data suggests a preference for sustained engagement. Short-form content in the archive is concentrated in music and BJJ technique clips — specific functional use cases — rather than distributed evenly across all domains.
+**Conclusion (supported):** The duration distribution describes the format mix of saved items. It cannot establish watch time or sustained engagement.
 """
 with open(REPORTS / "research_findings.md", "w", encoding="utf-8") as f:
     f.write(findings_md)
@@ -446,7 +446,7 @@ print("  Saved: Reports/research_findings.md")
 
 # ── FUTURE QUESTIONS ──────────────────────────────────────────────────────────
 fq_md = f"""# Future Questions
-**YouTube History Research Project**  
+**YouTube Learning Archive Intelligence System**
 Generated: {gen_date}
 
 ---
@@ -569,7 +569,7 @@ def md_to_simple_html(md_text):
 reports_to_include = [
     ("Executive Summary",         REPORTS / "executive_summary.md"),
     ("Technical Report",          REPORTS / "technical_report.md"),
-    ("Personal Learning Profile", REPORTS / "personal_learning_profile.md"),
+    ("Playlist-Save Pattern Profile", REPORTS / "personal_learning_profile.md"),
     ("Research Findings",         REPORTS / "research_findings.md"),
     ("Future Questions",          REPORTS / "future_questions.md"),
 ]
@@ -633,7 +633,7 @@ html = f"""<!DOCTYPE html>
 <main>
 {"".join(html_sections)}
 </main>
-<footer>YouTube History Research Project &mdash; Generated {gen_date}</footer>
+<footer>YouTube Learning Archive Intelligence System &mdash; Generated {gen_date}</footer>
 </body>
 </html>"""
 

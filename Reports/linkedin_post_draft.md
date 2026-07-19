@@ -16,7 +16,7 @@ What it demonstrates:
 - reproducible reporting
 - privacy-aware public release design
 
-The larger idea: personal data can become a learning-history map when handled carefully. The trick is making it useful without accidentally publishing your digital diary.
+The larger idea: personal data can become a collection-pattern map when handled carefully. Saved items remain interest signals, not proof of viewing or mastery.
 
 GitHub: [add link]
 

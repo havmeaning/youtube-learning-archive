@@ -1,5 +1,5 @@
 # Technical Report
-**YouTube History Research Project**  
+**YouTube Learning Archive Intelligence System**
 Generated: 2026-06-28
 
 ---

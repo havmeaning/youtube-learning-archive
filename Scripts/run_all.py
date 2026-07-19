@@ -2,7 +2,7 @@
 """
 run_all.py
 ===========
-Run the full YouTube History Research pipeline in order.
+Run the full YouTube Learning Archive pipeline in order.
 
 Usage:
     python Scripts/run_all.py
@@ -54,7 +54,7 @@ def count_rows(csv_path):
         return 0
 
 print("=" * 60)
-print("  YouTube History Research — Full Pipeline")
+print("  YouTube Learning Archive — Full Pipeline")
 print("=" * 60)
 print()
 
